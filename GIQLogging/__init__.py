@@ -28,6 +28,11 @@ def init(level=logging.DEBUG, logpath=None):
     :param level: optional, defaulted to DEBUG
     :param logpath: optional, filepath that the log will be written to
         prints to stdout if logpath=None
+
+    >>> init()
+    >>> logger = logging.getLogger()
+    >>> logger.level == logging.DEBUG and isinstance(logger.handlers[0].formatter, LogstashFormatterV1)
+    True
     """
     if logpath:
         handler = logging.FileHandler(logpath)

@@ -11,7 +11,7 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as readme:
 
 setup(
     name='GIQLogging',
-    version='1.0.1',
+    version='1.0.2',
 
     description='Lightweight logstash_formatter logging initializer',
     long_description=long_description,

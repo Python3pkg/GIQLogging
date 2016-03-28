@@ -1,2 +1,2 @@
 test:
-	python -m doctest GIQLogging/__init__.py
+	PYTHONPATH=. python tests/TestGIQLogging.py

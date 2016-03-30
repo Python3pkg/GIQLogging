@@ -33,7 +33,7 @@ Assumptions
 
 - In Graphiq's case, GIQLogging is specifically intended for services to log JSON output to be picked up and visualized using an ELK (Elasticsearch, Logstash & Kibana) stack. As such, we require the ``logstash_type`` value to be set upon initialization. This value is placed as an ``extra_field`` and output to each log entry for later use by Logstash.
 - The default ``level`` if one is not provided is ``logging.DEBUG``
-- If a ``logpath`` is not provided the log will be directed to ``sys.stdout`
+- If a ``logpath`` is not provided the log will be directed to ``sys.stdout``
 - ``logger_name`` is optional, only necessary if initializing multiple loggers
 - ``extra_fields`` are optional
 

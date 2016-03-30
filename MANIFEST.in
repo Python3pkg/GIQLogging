@@ -2,4 +2,4 @@
 include LICENSE
 
 # Include README for the long description
-include README.md
+include README.rst

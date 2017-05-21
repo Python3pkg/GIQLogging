@@ -16,7 +16,7 @@ class TestGIQLogging(unittest.TestCase):
     def test_init_with_extra_fields(self):
         extra_fields = {'foo': 'bar', 'zip': 'zap'}
         logger = GIQLogging.init(logstash_type='unittest', extra_fields=extra_fields, logger_name='test3')
-        for key in extra_fields.keys():
+        for key in list(extra_fields.keys()):
             self.assertIsNotNone(logger.handlers[0].formatter.defaults.get(key))
 
 
